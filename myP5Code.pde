@@ -4,13 +4,25 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var fireworkX = 20;
+var ghostX = 20;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
   background(255,255,255,0);
-  
+
+
+rect(222, 308, 7, 11);
+rect(210, 308, 7, 11);
+rect(198, 308, 7, 11);
+rect(184, 308, 7, 11);
+rect(170, 308, 7, 11);
+rect(170, 220, 60, 90); 
+
+fill(0,0,0);
+rect(280, 10, 100, 10);
+
+
    if(mousePressed){
     showXYPositions();
     
