@@ -11,17 +11,18 @@ draw = function(){
  
   background(255,255,255,0);
 
+// ghost
+fill(255,255,255);
 
-rect(222, 308, 7, 11);
-rect(210, 308, 7, 11);
-rect(198, 308, 7, 11);
-rect(184, 308, 7, 11);
-rect(170, 308, 7, 11);
-rect(170, 220, 60, 90); 
 
 fill(0,0,0);
-rect(280, 10, 100, 10);
+ellipse(185, 240, 6, 6);
+ellipse(215, 240, 6, 6);
+ellipse(200, 255, 15, 10);
 
+fill(255, 209, 220);
+rect(174, 246, 8, 6);
+rect(216, 246, 8, 6);
 
    if(mousePressed){
     showXYPositions();
@@ -29,9 +30,21 @@ rect(280, 10, 100, 10);
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
+fill(255,255,255);
+rect(ghostX, 308, 7, 11);
+rect(ghostX, 308, 7, 11);
+rect(ghostX, 308, 7, 11);
+rect(ghostX, 308, 7, 11);
+rect(ghostX, 308, 7, 11);
+rect(ghostX, 220, 60, 90); 
+
+fill(0,0,0);
+ellipse(185, 240, 6, 6);
+ellipse(215, 240, 6, 6);
+ellipse(ghost, 255, 15, 10);
+
   
-  fireworkX = fireworkX + 1;
+  ghostX = ghostX + 1;
 
 }
 
