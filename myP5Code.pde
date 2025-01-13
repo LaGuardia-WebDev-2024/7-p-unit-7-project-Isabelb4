@@ -10,8 +10,9 @@ var bat2X = 20;
 var bat3X = 20;
 var bat4X = 20;
 var bat5X = 20;
-var bat6X = 20;
+var bat6X = 20; 
 var bat7X = 20;
+var bat8X = 20;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -24,13 +25,12 @@ draw = function(){
   }
   
   //🎯Animation Code Goes Here
-fill(255,255,255);
-rect(ghostX, 308, 7, 11);
-rect(ghostX, 220, 60, 90); 
+fill(255,255,255,100);
+rect(ghostX, 260, 60, 80);     
   
 fill(0,0,0);
 rect(batX, 48, 3, 1);
-rect(batX, 46, 6, 3);
+rect(batX, 46, 6, 3); 
 rect(batX, 44, 7, 3);
 rect(batX, 42, 9, 4);
 rect(batX, 40, 7, 3);
@@ -98,6 +98,8 @@ rect(bat7X, 188, 5, 2);
 rect(bat7X, 186, 3, 1);
 rect(bat7X, 200, 12, 5); 
 
+rect(340, 390, bat8X, 7);
+
 ghostX = ghostX + 1;
 batX = batX + 2;
 bat2X = bat2X + 3;
@@ -105,11 +107,26 @@ bat3X = bat3X + 1.4;
 bat4X = bat4X + 2.7;
 bat5X = bat5X + 3.7;
 bat6X = bat6X + 1.1;
-bat7X = bat7X + 0.9;
+bat7X = bat7X + 0.9;  
+bat8X = bat8X + 1;
+
+if(batX > 600) {
+ghostX = 0;
+batX = 0;
+bat2X = 0;
+bat3X = 0;
+bat4X = 0;
+bat5X = 0;
+bat6X = 0;
+bat7X = 0;
+bat8X = 0;
+}
+
 }
 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
+
 
 showXYPositions = function(){
     fill(255,255,255)
